@@ -1,0 +1,64 @@
+#canvas {
+  border: 1px solid #d3d3d3;
+  background-color: #f1f1f1;
+}
+.canvasSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.canvasSection button {
+  background-color: #0ed1e8;
+  border: none;
+  padding: 9px 24px;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0px 2px 5px #b8b8b8;
+  border-radius: 5px;
+}
+.canvasSection button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+.controllerSection {
+  text-align: center;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.centerButton {
+  width: 100%;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.startButton {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.startButton button {
+  background-color: #3880ff;
+  min-width: 150px;
+}
+canvas {
+  width: 96%;
+  border: solid 1px #ccc;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  margin-top: 10px;
+  height: 300px;
+}
+@media (max-width: 480px) {
+  .canvasSection {
+    flex-direction: column;
+  }
+}
